@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width", initial-scale="1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    
+
+  </style>
+</head>
+
+<body>
+  <div class="main">
+  <nav>
+    <div class="logo">
+      <img src="https://i.pinimg.com/originals/6d/09/c4/6d09c48bfaa1d0786649be63af8e13c9.png" alt="" id="logo">
+    </div>
+    <div class="nav-links">
+      <div class="link"><a href="index.html">Home</a></div>
+      <div class="link"><a href="products.html">Products</a></div>
+      <div class="link"><a href="about.html">About</a></div>
+      <div class="link"><a href="contact.html">Contact</a></div>
+    </div>
+     <div class="ham">
+    <span id="line"></span>
+    <span id="line"></span>
+    <span id="line"></span>
+
+  </div>
+  </nav>
+ 
+    <header>
+        <div class="blank"></div>
+            
+    </header>
+
+
+    <footer class="smallfooter">
+        <div class="flogo">
+          <img src="https://i.pinimg.com/originals/6d/09/c4/6d09c48bfaa1d0786649be63af8e13c9.png" id="flogo" alt="">
+        </div>
+        <hr class="hr1">
+        <div class="footer-links" style="font-family: 'Josefin Sans', sans-serif;">
+          <span style="font-family: 'Alata', sans-serif;">Accent</span>
+          <div class="links">
+            <div class="lin"><a href="index.html">Home</a></div>
+            <div class="lin"><a href="products.html">Products</a></div>
+            <div class="lin"><a href="about.html">About</a></div>
+            <div class="lin"><a href="contact.html">Contact</a></div>
+          </div>
+        </div>
+        <hr class="hr2">
+        <div class="product-links" style="font-family: 'Josefin Sans', sans-serif;">
+          <span style="font-family: 'Alata', sans-serif;">Products </span>
+          <div class="links">
+            <div class="lin"><a href="Jeera.html">Jeera</a></div>
+            <div class="lin"><a href="mango.html">Mango</a></div>
+            <div class="lin"><a href="orange.html">Orange</a></div>
+            <div class="lin"><a href="litchi.html">Litchi</a></div>
+            <div class="lin"><a href="kathiyawadi.html">Kathiyawadi</a></div>
+            <div class="lin"><a href="#">Fresh Lemon</a></div>
+            <div class="lin"><a href="#">Cola</a></div>
+          </div>
+        </div>
+      </footer>
+
+</div>
+
+<script>
+
+const menubtn = document.querySelector('.ham');
+    const navlinks = document.querySelector('.nav-links');
+    
+
+    menubtn.addEventListener('click',()=>{
+      navlinks.classList.toggle('mobile-menu')
+    })
+
+</script>

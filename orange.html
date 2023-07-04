@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width", initial-scale="1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="pstyle.css">
+<style> 
+  #more {display: none;}
+</style>
+<script>
+  function showMore() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("read-more-btn");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      moreText.style.display = "none";
+      btnText.innerHTML = "Read More";
+    } else {
+      dots.style.display = "none";
+      moreText.style.display = "inline";
+      btnText.innerHTML = "Read Less";
+    }
+  }
+</script>
+</head>
+
+<body>
+  <div class="main">
+  <nav>
+    <div class="logo">
+      <img src="https://i.pinimg.com/originals/6d/09/c4/6d09c48bfaa1d0786649be63af8e13c9.png" alt="" id="logo">
+    </div>
+    <div class="nav-links">
+      <div class="link"><a href="index.html">Home</a></div>
+      <div class="link"><a href="products.html">Products</a></div>
+      <div class="link"><a href="about.html">About</a></div>
+      <div class="link"><a href="contact.html">Contact</a></div>
+    </div>
+     <div class="ham">
+    <span id="line"></span>
+    <span id="line"></span>
+    <span id="line"></span>
+
+  </div>
+  </nav>
+ 
+    
+        <div class="blank"></div>
+    <div class="naro">
+
+        <h1 class="pdesh1">Product Description</h1>
+        <div class="pdes">
+            <img src="https://i.pinimg.com/originals/89/e7/7a/89e77a647f248ee88dc8d60b90f4515f.png" alt="Orange">
+            <div class="des">
+                 <span class="title">Accent Orange</span>
+                
+                 <p>Introducing the range of cold drinks from Accent Beverages. Our premium products are designed to quench your thirst and invigorate your senses. <br><br>
+
+                    Experience the refreshing taste of <b>Accent Orange</b>, our flagship beverage. Made with the finest ingredients, it offers a perfect blend of sweetness and tanginess. Whether it's a hot summer day or a well-deserved break, <b>Accent Orange</b> is the ultimate companion. <br> <br>  </p>
+                    
+                    <p id="dots">...</p>
+                  <p id="more">Accent Beverages proudly presents a wide array of unique flavors to suit every taste. From the classic elegance of <b>Accent Orange</b> to the bold fusion of <b>Accent Orange</b>, our range has something for everyone. <br><br>
+                                    
+                    Each bottle of <b>Accent Orange</b> is meticulously crafted to ensure a delightful experience. We prioritize quality, preserving the natural goodness of our ingredients. Choose <b>Accent Orange</b> for excellence in taste. <br><br>
+                    
+                    Accent Beverages is dedicated to bringing you the finest cold drinks. Our commitment to customer satisfaction means we continuously create exciting flavors. Explore our range and satisfy your cravings. <br><br>
+                    
+                    Experience the true essence of flavor and quality with Accent Beverages. Choose <b>Accent Orange</b> for irresistible refreshment.</p>
+
+                  <button onclick="showMore()" id="read-more-btn">Read More</button>
+
+
+                </div>
+            </div>
+        </div>
+            
+    
+
+
+    <footer class="smallfooter">
+        <div class="flogo">
+          <img src="https://i.pinimg.com/originals/6d/09/c4/6d09c48bfaa1d0786649be63af8e13c9.png" id="flogo" alt="">
+        </div>
+        <hr class="hr1">
+        <div class="footer-links" style="font-family: 'Josefin Sans', sans-serif;">
+          <span style="font-family: 'Alata', sans-serif;">Accent</span>
+          <div class="links">
+            <div class="lin"><a href="index.html">Home</a></div>
+            <div class="lin"><a href="products.html">Products</a></div>
+            <div class="lin"><a href="about.html">About</a></div>
+            <div class="lin"><a href="contact.html">Contact</a></div>
+          </div>
+        </div>
+        <hr class="hr2">
+        <div class="product-links" style="font-family: 'Josefin Sans', sans-serif;">
+          <span style="font-family: 'Alata', sans-serif;">Products </span>
+          <div class="links">
+            <div class="lin"><a href="Jeera.html">Jeera</a></div>
+            <div class="lin"><a href="mango.html">Mango</a></div>
+            <div class="lin"><a href="orange.html">Orange</a></div>
+            <div class="lin"><a href="litchi.html">Litchi</a></div>
+            <div class="lin"><a href="kathiyawadi.html">Kathiyawadi</a></div>
+            <div class="lin"><a href="#">Fresh Lemon</a></div>
+            <div class="lin"><a href="#">Cola</a></div>
+          </div>
+        </div>
+      </footer>
+
+</div>
+
+
+
+<script>
+
+const menubtn = document.querySelector('.ham');
+    const navlinks = document.querySelector('.nav-links');
+    
+
+    menubtn.addEventListener('click',()=>{
+      navlinks.classList.toggle('mobile-menu')
+    })
+
+</script>

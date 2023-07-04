@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width", initial-scale="1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+
+    h1 {
+        color: #333;
+        font-size: 1em;
+        text-align: center;
+    }
+    h2{
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+
+    p {
+        color: #666;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: justify;
+        font-size: 0.7em;
+    }
+    .section{
+      width: 100%;
+      padding: 10%;
+      font-size: 200%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+</style>
+</head>
+
+<body>
+  <div class="main">
+  <nav>
+    <div class="logo">
+      <img src="https://i.pinimg.com/originals/6d/09/c4/6d09c48bfaa1d0786649be63af8e13c9.png" alt="" id="logo">
+    </div>
+    <div class="nav-links">
+      <div class="link"><a href="index.html">Home</a></div>
+      <div class="link"><a href="products.html">Products</a></div>
+      <div class="link"><a href="about.html">About</a></div>
+      <div class="link"><a href="contact.html">Contact</a></div>
+    </div>
+     <div class="ham">
+    <span id="line"></span>
+    <span id="line"></span>
+    <span id="line"></span>
+
+  </div>
+  </nav>
+        <div class="blank"></div>
+      <div class="section">
+        <h1>About <b>Accent Beverages</b> </h1>
+        <p>Welcome to <b>Accent Beverages</b> ! We are a leading cold business committed to delivering top-quality cold products and services to our customers.</p>
+        
+        <h2>Our Story</h2>
+        <p>Founded in 2021, <b>Accent Beverages</b>  has been a trusted name in the cold industry. Our journey began with a passion for providing fresh and frozen goods to local communities. Over the years, we have expanded our operations and built a strong reputation for reliability and excellence.</p>
+        
+        <h2>Our Mission</h2>
+        <p>At <b>Accent Beverages</b> , our mission is to exceed customer expectations by offering an extensive selection of cold products that are sourced responsibly and meet the highest quality standards. We aim to enhance people's lives through the enjoyment of fresh and flavorful cold items.</p>
+        
+        <h2>Quality Assurance</h2>
+        <p>We take pride in our rigorous quality assurance practices. From the careful selection of suppliers to the meticulous monitoring of storage and transportation conditions, we ensure that our cold products maintain their freshness and nutritional value.</p>
+        
+        <h2>Product Range</h2>
+        <p><b>Accent Beverages</b>  offers a diverse range of cold products to meet various culinary needs. Our inventory includes a wide assortment of fresh fruits and vegetables, dairy products, premium meats, seafood, frozen desserts, and more. We continuously update our selection to cater to evolving tastes and preferences.</p>
+        
+        <h2>Sustainable Practices</h2>
+        <p>As a responsible cold business, we are committed to sustainability. We strive to minimize our environmental impact by implementing eco-friendly practices such as energy-efficient refrigeration, waste reduction, and supporting local farmers and producers.</p>
+        
+        <h2>Community Involvement</h2>
+        <p>We believe in giving back to the communities we serve. Through partnerships with local charities and food banks, we actively contribute to fighting food insecurity and support initiatives that promote nutrition and well-being.</p>
+        
+        <h2>Customer Satisfaction</h2>
+        <p>Customer satisfaction is at the heart of our business. We value our customers and aim to provide them with exceptional service and a pleasant shopping experience. Our dedicated team is always ready to assist, answer questions, and ensure that every customer's needs are met.</p>
+        
+        <h2>Visit Us</h2>
+        <p>We invite you to visit our stores and explore our wide range of cold products. Experience the freshness and quality that <b>Accent Beverages</b>  has to offer.  visit our website at [website URL] to learn more.</p>
+        
+      </div>   
+        
+        
+    <footer class="smallfooter">
+        <div class="flogo">
+          <img src="https://i.pinimg.com/originals/6d/09/c4/6d09c48bfaa1d0786649be63af8e13c9.png" id="flogo" alt="">
+        </div>
+        <hr class="hr1">
+        <div class="footer-links" style="font-family: 'Josefin Sans', sans-serif;">
+          <span style="font-family: 'Alata', sans-serif;">Accent</span>
+          <div class="links">
+            <div class="lin"><a href="index.html">Home</a></div>
+            <div class="lin"><a href="products.html">Products</a></div>
+            <div class="lin"><a href="about.html">About</a></div>
+            <div class="lin"><a href="contact.html">Contact</a></div>
+          </div>
+        </div>
+        <hr class="hr2">
+        <div class="product-links" style="font-family: 'Josefin Sans', sans-serif;">
+          <span style="font-family: 'Alata', sans-serif;">Products </span>
+          <div class="links">
+            <div class="lin"><a href="Jeera.html">Jeera</a></div>
+            <div class="lin"><a href="mango.html">Mango</a></div>
+            <div class="lin"><a href="orange.html">Orange</a></div>
+            <div class="lin"><a href="litchi.html">Litchi</a></div>
+            <div class="lin"><a href="kathiyawadi.html">Kathiyawadi</a></div>
+            <div class="lin"><a href="#">Fresh Lemon</a></div>
+            <div class="lin"><a href="#">Cola</a></div>
+          </div>
+        </div>
+      </footer>
+
+</div>
+
+<script>
+
+const menubtn = document.querySelector('.ham');
+    const navlinks = document.querySelector('.nav-links');
+    
+
+    menubtn.addEventListener('click',()=>{
+      navlinks.classList.toggle('mobile-menu')
+    })
+
+</script>
